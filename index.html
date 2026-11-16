@@ -1,0 +1,1511 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SEO Local e Meta Tags otimizadas pelo Especialista em SEO Local -->
+    <title>Costure Bem | Curso de Corte, Costura e Consertos na Etec de Birigui - SP</title>
+    <meta name="description" content="Aprenda corte, costura, modelagem e consertos de calças, saias, blusas, vestidos e jaquetas do zero ao avançado no Costure Bem. Aulas presenciais na Etec Dr. Renato Cordeiro em Birigui - SP.">
+    <meta name="keywords" content="curso de costura Birigui, corte e costura Etec Birigui, conserto de roupas Birigui, modelagem plana, Costure Bem, Dr. Renato Cordeiro">
+    <meta name="author" content="Costure Bem Ateliê & Escola">
+
+    <!-- Google Fonts: Playfair Display & Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap 5.3 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Estilos Customizados (Paleta Artesanal Sofisticada) -->
+    <style>
+        :root {
+            --color-terracotta: #B85D43;
+            --color-terracotta-dark: #9B4A33;
+            --color-terracotta-light: #F5E6E1;
+            --color-cream: #FAF6F0;
+            --color-cream-dark: #F0E9DE;
+            --color-sage: #4A6B5D;
+            --color-sage-light: #E4ECE8;
+            --color-gold: #D4A373;
+            --color-gold-light: #F7EFE6;
+            --color-charcoal: #2B2623;
+            --color-muted: #5F5853;
+            --font-serif: 'Playfair Display', Georgia, serif;
+            --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+            --transition-smooth: all 0.35s cubic-bezier(0.25, 0.8, 0.25, 1);
+        }
+
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 80px;
+        }
+
+        body {
+            font-family: var(--font-sans);
+            color: var(--color-charcoal);
+            background-color: var(--color-cream);
+            overflow-x: hidden;
+            line-height: 1.65;
+        }
+
+        h1, h2, h3, h4, h5, .font-serif {
+            font-family: var(--font-serif);
+            color: var(--color-charcoal);
+        }
+
+        /* Utilitários de Cores */
+        .bg-cream { background-color: var(--color-cream); }
+        .bg-cream-dark { background-color: var(--color-cream-dark); }
+        .bg-terracotta { background-color: var(--color-terracotta); }
+        .bg-terracotta-light { background-color: var(--color-terracotta-light); }
+        .bg-sage { background-color: var(--color-sage); }
+        .bg-sage-light { background-color: var(--color-sage-light); }
+        .bg-gold-light { background-color: var(--color-gold-light); }
+        .text-terracotta { color: var(--color-terracotta); }
+        .text-sage { color: var(--color-sage); }
+        .text-gold { color: var(--color-gold); }
+        .text-charcoal { color: var(--color-charcoal); }
+
+        /* Botões Personalizados */
+        .btn-terracotta {
+            background-color: var(--color-terracotta);
+            color: #fff;
+            border: 2px solid var(--color-terracotta);
+            border-radius: 50px;
+            padding: 0.75rem 1.75rem;
+            font-weight: 600;
+            transition: var(--transition-smooth);
+            box-shadow: 0 4px 14px rgba(184, 93, 67, 0.25);
+        }
+
+        .btn-terracotta:hover, .btn-terracotta:focus {
+            background-color: var(--color-terracotta-dark);
+            border-color: var(--color-terracotta-dark);
+            color: #fff;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(184, 93, 67, 0.35);
+        }
+
+        .btn-outline-terracotta {
+            background-color: transparent;
+            color: var(--color-terracotta);
+            border: 2px solid var(--color-terracotta);
+            border-radius: 50px;
+            padding: 0.75rem 1.75rem;
+            font-weight: 600;
+            transition: var(--transition-smooth);
+        }
+
+        .btn-outline-terracotta:hover {
+            background-color: var(--color-terracotta);
+            color: #fff;
+            transform: translateY(-2px);
+        }
+
+        /* Navbar */
+        .navbar-custom {
+            background-color: rgba(250, 246, 240, 0.95);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(184, 93, 67, 0.14);
+            transition: var(--transition-smooth);
+            padding: 0.85rem 0;
+        }
+
+        .navbar-custom.scrolled {
+            box-shadow: 0 4px 20px rgba(43, 38, 35, 0.07);
+            padding: 0.6rem 0;
+        }
+
+        .navbar-brand {
+            font-family: var(--font-serif);
+            font-size: 1.65rem;
+            font-weight: 700;
+            color: var(--color-charcoal) !important;
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+        }
+
+        .nav-link {
+            font-weight: 500;
+            color: var(--color-charcoal) !important;
+            padding: 0.5rem 0.95rem !important;
+            position: relative;
+            transition: color 0.3s ease;
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: 4px;
+            left: 0.95rem;
+            background-color: var(--color-terracotta);
+            transition: width 0.3s ease;
+        }
+
+        .nav-link:hover::after, .nav-link.active::after {
+            width: calc(100% - 1.9rem);
+        }
+
+        .nav-link:hover, .nav-link.active {
+            color: var(--color-terracotta) !important;
+        }
+
+        /* Hero Section */
+        .hero-section {
+            position: relative;
+            padding-top: 7.5rem;
+            padding-bottom: 5rem;
+            background: radial-gradient(circle at top right, var(--color-terracotta-light) 0%, var(--color-cream) 58%);
+            overflow: hidden;
+        }
+
+        .stitch-line {
+            border-top: 2px dashed rgba(184, 93, 67, 0.35);
+        }
+
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background-color: #fff;
+            border: 1px solid rgba(212, 163, 115, 0.45);
+            color: var(--color-charcoal);
+            padding: 0.45rem 1rem;
+            border-radius: 50px;
+            font-size: 0.875rem;
+            font-weight: 600;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.03);
+        }
+
+        .hero-visual-wrapper {
+            position: relative;
+            border-radius: 28px;
+            background: linear-gradient(145deg, #fff, var(--color-cream-dark));
+            padding: 1.5rem;
+            box-shadow: 0 20px 50px rgba(43, 38, 35, 0.08);
+            border: 1px solid rgba(184, 93, 67, 0.15);
+        }
+
+        .floating-card {
+            position: absolute;
+            background: #fff;
+            border-radius: 16px;
+            padding: 0.85rem 1.2rem;
+            box-shadow: 0 10px 30px rgba(43, 38, 35, 0.1);
+            border: 1px solid rgba(74, 107, 93, 0.2);
+            animation: floatAnim 4s ease-in-out infinite;
+            z-index: 2;
+        }
+
+        .floating-card-1 {
+            bottom: 20px;
+            left: -15px;
+        }
+
+        .floating-card-2 {
+            top: 25px;
+            right: -15px;
+            animation-delay: 2s;
+        }
+
+        @keyframes floatAnim {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-8px); }
+        }
+
+        /* Indicadores de Prova Social */
+        .social-proof-bar {
+            background-color: #fff;
+            border-radius: 22px;
+            padding: 1.5rem 2rem;
+            box-shadow: 0 12px 32px rgba(43, 38, 35, 0.05);
+            border: 1px solid rgba(184, 93, 67, 0.12);
+        }
+
+        /* Seção Produtos & Filtros */
+        .filter-btn {
+            border-radius: 50px;
+            padding: 0.6rem 1.5rem;
+            font-weight: 600;
+            font-size: 0.95rem;
+            border: 1.5px solid rgba(184, 93, 67, 0.3);
+            background-color: #fff;
+            color: var(--color-charcoal);
+            transition: var(--transition-smooth);
+        }
+
+        .filter-btn:hover, .filter-btn.active {
+            background-color: var(--color-terracotta);
+            border-color: var(--color-terracotta);
+            color: #fff;
+            box-shadow: 0 4px 12px rgba(184, 93, 67, 0.25);
+        }
+
+        .product-card {
+            background: #fff;
+            border-radius: 24px;
+            border: 1px solid rgba(43, 38, 35, 0.07);
+            overflow: hidden;
+            transition: var(--transition-smooth);
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .product-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 18px 36px rgba(43, 38, 35, 0.09);
+            border-color: rgba(184, 93, 67, 0.35);
+        }
+
+        .product-illustration {
+            height: 185px;
+            background: linear-gradient(135deg, var(--color-cream-dark) 0%, var(--color-terracotta-light) 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            padding: 1.5rem;
+        }
+
+        .category-pill {
+            position: absolute;
+            top: 14px;
+            right: 14px;
+            font-size: 0.72rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            padding: 0.35rem 0.85rem;
+            border-radius: 50px;
+        }
+
+        .difficulty-pill {
+            position: absolute;
+            top: 14px;
+            left: 14px;
+            font-size: 0.72rem;
+            font-weight: 600;
+            padding: 0.3rem 0.75rem;
+            border-radius: 50px;
+            background-color: rgba(43, 38, 35, 0.82);
+            color: #FAF6F0;
+        }
+
+        /* Cards de Serviços */
+        .service-card {
+            background: #fff;
+            border-radius: 24px;
+            padding: 2rem;
+            border: 1px solid rgba(43, 38, 35, 0.07);
+            transition: var(--transition-smooth);
+            height: 100%;
+            position: relative;
+        }
+
+        .service-card.featured {
+            border: 2px solid var(--color-terracotta);
+            box-shadow: 0 15px 40px rgba(184, 93, 67, 0.14);
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 16px 32px rgba(43, 38, 35, 0.08);
+        }
+
+        .service-icon-box {
+            width: 56px;
+            height: 56px;
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.55rem;
+            margin-bottom: 1.25rem;
+        }
+
+        /* Cards dos 5 Especialistas */
+        .specialist-card {
+            background: #fff;
+            border-radius: 20px;
+            padding: 1.5rem 1.25rem;
+            border: 1px solid rgba(74, 107, 93, 0.16);
+            text-align: center;
+            height: 100%;
+            transition: var(--transition-smooth);
+        }
+
+        .specialist-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 26px rgba(43, 38, 35, 0.07);
+            border-color: var(--color-sage);
+        }
+
+        .specialist-avatar {
+            width: 64px;
+            height: 64px;
+            border-radius: 50%;
+            margin: 0 auto 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+
+        /* Mapa e Localização */
+        .map-container {
+            border-radius: 24px;
+            overflow: hidden;
+            box-shadow: 0 15px 35px rgba(43, 38, 35, 0.1);
+            border: 4px solid #fff;
+            min-height: 400px;
+            height: 100%;
+        }
+
+        /* Formulário */
+        .form-card {
+            background: #fff;
+            border-radius: 28px;
+            padding: 2.5rem;
+            box-shadow: 0 20px 45px rgba(43, 38, 35, 0.07);
+            border: 1px solid rgba(184, 93, 67, 0.15);
+        }
+
+        .form-control, .form-select {
+            border-radius: 14px;
+            padding: 0.75rem 1rem;
+            border: 1.5px solid #E2DDD5;
+            background-color: var(--color-cream);
+            transition: border-color 0.25s ease, box-shadow 0.25s ease;
+        }
+
+        .form-control:focus, .form-select:focus {
+            background-color: #fff;
+            border-color: var(--color-terracotta);
+            box-shadow: 0 0 0 0.2rem rgba(184, 93, 67, 0.15);
+        }
+
+        /* Botão Flutuante WhatsApp */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 24px;
+            right: 24px;
+            width: 60px;
+            height: 60px;
+            background-color: #25D366;
+            color: #fff;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.85rem;
+            box-shadow: 0 8px 24px rgba(37, 211, 102, 0.35);
+            z-index: 1040;
+            transition: var(--transition-smooth);
+            text-decoration: none;
+        }
+
+        .whatsapp-float:hover {
+            transform: scale(1.08) translateY(-3px);
+            color: #fff;
+            background-color: #20BA5A;
+        }
+
+        /* Footer */
+        .footer-custom {
+            background-color: var(--color-charcoal);
+            color: #E6E1DA;
+            padding-top: 4.5rem;
+            padding-bottom: 2rem;
+        }
+
+        .footer-link {
+            color: #BFB8AE;
+            text-decoration: none;
+            transition: color 0.25s ease;
+            display: inline-block;
+            margin-bottom: 0.5rem;
+        }
+
+        .footer-link:hover {
+            color: var(--color-gold);
+        }
+
+        @media (max-width: 767.98px) {
+            .hero-section {
+                padding-top: 6.2rem;
+                padding-bottom: 3.5rem;
+            }
+            .floating-card {
+                position: static;
+                margin-top: 0.75rem;
+                animation: none;
+            }
+            .form-card {
+                padding: 1.75rem 1.25rem;
+            }
+        }
+    </style>
+</head>
+<body data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="100">
+
+    <!-- 1. NAVBAR RESPONSIVA (BOOTSTRAP 5) -->
+    <nav id="mainNav" class="navbar navbar-expand-lg navbar-custom fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#home">
+                <!-- Logotipo SVG Customizado: Carretel, Linha & Agulha -->
+                <svg width="36" height="36" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <rect x="8" y="6" width="24" height="4" rx="2" fill="#D4A373"/>
+                    <rect x="8" y="30" width="24" height="4" rx="2" fill="#D4A373"/>
+                    <rect x="11" y="10" width="18" height="20" fill="#B85D43"/>
+                    <path d="M11 14H29M11 18H29M11 22H29M11 26H29" stroke="#FAF6F0" stroke-width="1.5" stroke-linecap="round"/>
+                    <path d="M33 5L14 35" stroke="#2B2623" stroke-width="2.2" stroke-linecap="round"/>
+                    <circle cx="32.5" cy="5.8" r="1.5" fill="#FAF6F0"/>
+                </svg>
+                <span>Costure <span class="text-terracotta">Bem</span></span>
+            </a>
+
+            <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Alternar navegação">
+                <i class="bi bi-list fs-1 text-charcoal"></i>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0 text-center">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#produtos">Produtos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#servicos">Serviços</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#localizacao">Localização</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contato">Contato</a>
+                    </li>
+                </ul>
+                <div class="d-grid d-lg-block text-center">
+                    <a href="#contato" class="btn btn-terracotta btn-sm px-4 py-2">
+                        <i class="bi bi-scissors me-1"></i> Matricule-se
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 2. HOME (HERO SECTION + PROVA SOCIAL) -->
+    <section id="home" class="hero-section">
+        <div class="container">
+            <div class="row align-items-center gy-5">
+                <!-- Coluna Copywriting -->
+                <div class="col-lg-6">
+                    <div class="d-flex flex-wrap gap-2 mb-3">
+                        <span class="hero-badge">
+                            <i class="bi bi-stars text-gold"></i> Do zero ao avançado
+                        </span>
+                        <span class="hero-badge">
+                            <i class="bi bi-patch-check-fill text-sage"></i> Certificado reconhecido
+                        </span>
+                    </div>
+
+                    <h1 class="display-4 fw-bold mb-3 lh-sm">
+                        Domine a arte de <span class="text-terracotta fst-italic">fabricar e consertar</span> roupas com acabamento profissional.
+                    </h1>
+
+                    <p class="lead text-muted mb-4">
+                        No curso <strong>Costure Bem</strong>, você aprende na prática desde o primeiro ponto na máquina até a confecção e reforma de calças, saias, blusas, vestidos e jaquetas — para vestir sua família ou conquistar sua independência financeira.
+                    </p>
+
+                    <div class="d-flex flex-column flex-sm-row gap-3 mb-4">
+                        <a href="#contato" class="btn btn-terracotta btn-lg text-center">
+                            Garantir Minha Vaga <i class="bi bi-arrow-right ms-2"></i>
+                        </a>
+                        <a href="#produtos" class="btn btn-outline-terracotta btn-lg text-center">
+                            Conhecer os 6 Módulos
+                        </a>
+                    </div>
+
+                    <div class="stitch-line pt-3 mt-4 d-flex flex-wrap align-items-center gap-4 text-muted small">
+                        <div><i class="bi bi-geo-alt-fill text-terracotta me-1"></i> Polo Presencial: <strong>Etec Dr. Renato Cordeiro</strong> (Birigui-SP)</div>
+                        <div><i class="bi bi-people-fill text-sage me-1"></i> Turmas reduzidas (máx. 10 alunos)</div>
+                    </div>
+                </div>
+
+                <!-- Coluna Visual SVG Editorial -->
+                <div class="col-lg-6">
+                    <div class="hero-visual-wrapper">
+                        <svg viewBox="0 0 500 380" class="w-100 h-auto rounded-4" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Ilustração de máquina de costura, manequim de modelagem e tecidos">
+                            <rect width="500" height="380" rx="20" fill="#FAF6F0"/>
+                            <circle cx="380" cy="95" r="85" fill="#F5E6E1"/>
+                            <circle cx="120" cy="290" r="95" fill="#E4ECE8"/>
+                            
+                            <!-- Linha pontilhada de costura -->
+                            <path d="M30 50 Q 250 15, 470 65" stroke="#B85D43" stroke-width="2.5" stroke-dasharray="8 8" fill="none"/>
+
+                            <!-- Manequim de Alfaiataria -->
+                            <g transform="translate(85, 65)">
+                                <rect x="47" y="175" width="6" height="80" fill="#2B2623"/>
+                                <path d="M25 255 L75 255" stroke="#2B2623" stroke-width="6" stroke-linecap="round"/>
+                                <path d="M50 255 L30 275 M50 255 L70 275" stroke="#2B2623" stroke-width="5" stroke-linecap="round"/>
+                                <circle cx="50" cy="18" r="8" fill="#D4A373"/>
+                                <path d="M32 32 C 22 45, 20 75, 34 102 C 39 112, 38 122, 26 165 L 74 165 C 62 122, 61 112, 66 102 C 80 75, 78 45, 68 32 Z" fill="#E8D8C8" stroke="#B85D43" stroke-width="2"/>
+                                <path d="M34 102 Q 50 110 66 102" stroke="#D4A373" stroke-width="5" fill="none"/>
+                                <path d="M34 102 Q 50 110 66 102" stroke="#2B2623" stroke-width="1" stroke-dasharray="2 3" fill="none"/>
+                            </g>
+
+                            <!-- Máquina de Costura Estilizada -->
+                            <g transform="translate(215, 115)">
+                                <rect x="10" y="155" width="220" height="22" rx="11" fill="#2B2623"/>
+                                <rect x="20" y="143" width="200" height="14" rx="4" fill="#B85D43"/>
+                                <path d="M175 143 L175 55 C175 35, 160 25, 140 25 L55 25 C35 25, 25 38, 25 58 L25 92 L58 92 L58 68 L135 68 L135 143 Z" fill="#B85D43"/>
+                                <rect x="180" y="45" width="16" height="42" rx="8" fill="#D4A373"/>
+                                <rect x="145" y="5" width="14" height="20" rx="3" fill="#4A6B5D"/>
+                                <line x1="152" y1="0" x2="152" y2="5" stroke="#2B2623" stroke-width="2"/>
+                                <line x1="41" y1="92" x2="41" y2="122" stroke="#2B2623" stroke-width="2.5"/>
+                                <path d="M5 135 Q 45 128, 85 138 T 155 135 L 155 143 L 5 143 Z" fill="#4A6B5D"/>
+                            </g>
+
+                            <!-- Tesoura de Alfaiate -->
+                            <g transform="translate(360, 265) rotate(-18)">
+                                <circle cx="15" cy="15" r="10" stroke="#D4A373" stroke-width="4" fill="none"/>
+                                <circle cx="15" cy="40" r="10" stroke="#D4A373" stroke-width="4" fill="none"/>
+                                <path d="M24 20 L85 32 L24 34 Z" fill="#2B2623"/>
+                            </g>
+                        </svg>
+
+                        <!-- Badges Flutuantes -->
+                        <div class="floating-card floating-card-1 d-flex align-items-center gap-3">
+                            <div class="bg-terracotta-light text-terracotta rounded-circle p-2 d-flex align-items-center justify-content-center" style="width:42px;height:42px;">
+                                <i class="bi bi-rulers fs-5"></i>
+                            </div>
+                            <div>
+                                <div class="fw-bold small">100% Mão na Massa</div>
+                                <div class="text-muted" style="font-size: 0.78rem;">Você leva suas peças prontas para casa</div>
+                            </div>
+                        </div>
+
+                        <div class="floating-card floating-card-2 d-flex align-items-center gap-3">
+                            <div class="bg-sage-light text-sage rounded-circle p-2 d-flex align-items-center justify-content-center" style="width:42px;height:42px;">
+                                <i class="bi bi-cash-coin fs-5"></i>
+                            </div>
+                            <div>
+                                <div class="fw-bold small">Alta Lucratividade</div>
+                                <div class="text-muted" style="font-size: 0.78rem;">Domine os reparos mais pedidos</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Indicadores de Prova Social -->
+            <div class="social-proof-bar mt-5">
+                <div class="row g-4 text-center align-items-center">
+                    <div class="col-6 col-md-3 border-end-md">
+                        <div class="font-serif fs-2 fw-bold text-terracotta">+480</div>
+                        <div class="small fw-semibold text-muted">Alunos Formados em Birigui</div>
+                    </div>
+                    <div class="col-6 col-md-3 border-end-md">
+                        <div class="font-serif fs-2 fw-bold text-sage">100%</div>
+                        <div class="small fw-semibold text-muted">Aulas Práticas em Máquina</div>
+                    </div>
+                    <div class="col-6 col-md-3 border-end-md">
+                        <div class="font-serif fs-2 fw-bold text-charcoal">6 Módulos</div>
+                        <div class="small fw-semibold text-muted">Confecção & Reparos Lucrativos</div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <div class="font-serif fs-2 fw-bold text-gold">Certificado</div>
+                        <div class="small fw-semibold text-muted">Válido em Todo Território Nacional</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. PRODUTOS (6 ITENS COM FILTRO INTERATIVO E MODAL DE EMENTA) -->
+    <section id="produtos" class="py-5 bg-cream-dark">
+        <div class="container py-4">
+            <div class="text-center mx-auto mb-5" style="max-width: 720px;">
+                <span class="text-uppercase fw-bold text-terracotta small">Portfólio Prático do Curso</span>
+                <h2 class="display-5 fw-bold mt-1 mb-3">Peças que você vai fabricar e consertar</h2>
+                <p class="text-muted">
+                    Explore os <strong>6 pilares de aprendizado</strong> da Costure Bem. Use os filtros abaixo para visualizar os projetos focados em <strong>fabricação do zero</strong> ou <strong>consertos e ajustes</strong>.
+                </p>
+
+                <!-- Botões de Filtro Interativos (JavaScript) -->
+                <div class="d-flex flex-wrap justify-content-center gap-2 mt-4" role="group" aria-label="Filtrar produtos por categoria">
+                    <button type="button" class="filter-btn active" data-filter="todos">Todos (6)</button>
+                    <button type="button" class="filter-btn" data-filter="fabricacao">Fabricação</button>
+                    <button type="button" class="filter-btn" data-filter="consertos">Consertos & Ajustes</button>
+                </div>
+            </div>
+
+            <!-- Grid com os 6 Produtos Detalhados -->
+            <div class="row g-4" id="produtosGrid">
+                <!-- Produto 1: Calças Sociais e Jeans -->
+                <div class="col-md-6 col-lg-4 produto-item" data-category="fabricacao consertos">
+                    <div class="product-card">
+                        <div class="product-illustration">
+                            <span class="difficulty-pill"><i class="bi bi-bar-chart-fill text-gold me-1"></i>Iniciante / Interm.</span>
+                            <span class="category-pill bg-white text-terracotta shadow-sm">Fabricação & Conserto</span>
+                            <!-- Ilustração SVG Calça -->
+                            <svg width="110" height="120" viewBox="0 0 110 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M30 12 H80 L88 108 H62 L55 48 L48 108 H22 L30 12 Z" fill="#4A6B5D" stroke="#2B2623" stroke-width="2.5" stroke-linejoin="round"/>
+                                <line x1="30" y1="22" x2="80" y2="22" stroke="#FAF6F0" stroke-width="2"/>
+                                <line x1="55" y1="22" x2="55" y2="42" stroke="#2B2623" stroke-width="2"/>
+                                <path d="M23 98 H47 M63 98 H87" stroke="#D4A373" stroke-width="2.5" stroke-dasharray="3 2"/>
+                            </svg>
+                        </div>
+                        <div class="p-4 d-flex flex-column flex-grow-1">
+                            <h3 class="h4 fw-bold mb-2">1. Calças Sociais e Jeans</h3>
+                            <p class="text-muted small mb-3">
+                                Da alfaiataria estruturada ao jeans do dia a dia: aprenda modelagem reta, bainha original mantendo a lavagem e ajuste de cintura sem papos.
+                            </p>
+                            <ul class="list-unstyled small mb-4 flex-grow-1">
+                                <li class="mb-1"><i class="bi bi-check2-circle text-terracotta me-2"></i>Fabricação de calça reta e pantalona</li>
+                                <li class="mb-1"><i class="bi bi-check2-circle text-terracotta me-2"></i>Bainha original, italiana e invisível</li>
+                                <li><i class="bi bi-check2-circle text-terracotta me-2"></i>Ajuste de cós, gancho e quadril</li>
+                            </ul>
+                            <button type="button" class="btn btn-outline-terracotta btn-sm w-100" onclick="abrirDetalhesProduto('calcas')">
+                                <i class="bi bi-journal-text me-1"></i> Ver Ementa / Detalhes
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Produto 2: Saias Godê, Lápis e Midi -->
+                <div class="col-md-6 col-lg-4 produto-item" data-category="fabricacao">
+                    <div class="product-card">
+                        <div class="product-illustration">
+                            <span class="difficulty-pill"><i class="bi bi-bar-chart-fill text-gold me-1"></i>Iniciante</span>
+                            <span class="category-pill bg-white text-sage shadow-sm">Fabricação</span>
+                            <!-- Ilustração SVG Saia -->
+                            <svg width="110" height="120" viewBox="0 0 110 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M35 16 H75 L96 104 Q55 114 14 104 L35 16 Z" fill="#B85D43" stroke="#2B2623" stroke-width="2.5" stroke-linejoin="round"/>
+                                <rect x="34" y="16" width="42" height="9" fill="#D4A373" stroke="#2B2623" stroke-width="2"/>
+                                <path d="M45 25 L36 105 M65 25 L74 105" stroke="#FAF6F0" stroke-width="1.5" stroke-dasharray="4 4"/>
+                            </svg>
+                        </div>
+                        <div class="p-4 d-flex flex-column flex-grow-1">
+                            <h3 class="h4 fw-bold mb-2">2. Saias Godê, Lápis e Midi</h3>
+                            <p class="text-muted small mb-3">
+                                Domine o caimento do fio do tecido, pences anatômicas, aplicação de cós entretelado, forro embutido e fendas elegantes.
+                            </p>
+                            <ul class="list-unstyled small mb-4 flex-grow-1">
+                                <li class="mb-1"><i class="bi bi-check2-circle text-terracotta me-2"></i>Cálculo de raio para saia godê e evasê</li>
+                                <li class="mb-1"><i class="bi bi-check2-circle text-terracotta me-2"></i>Modelagem de saia lápis com fenda</li>
+                                <li><i class="bi bi-check2-circle text-terracotta me-2"></i>Acabamento de barra lenço e forro</li>
+                            </ul>
+                            <button type="button" class="btn btn-outline-terracotta btn-sm w-100" onclick="abrirDetalhesProduto('saias')">
+                                <i class="bi bi-journal-text me-1"></i> Ver Ementa / Detalhes
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Produto 3: Blusas, Camisas e Croppeds -->
+                <div class="col-md-6 col-lg-4 produto-item" data-category="fabricacao">
+                    <div class="product-card">
+                        <div class="product-illustration">
+                            <span class="difficulty-pill"><i class="bi bi-bar-chart-fill text-gold me-1"></i>Intermediário</span>
+                            <span class="category-pill bg-white text-sage shadow-sm">Fabricação</span>
+                            <!-- Ilustração SVG Blusa -->
+                            <svg width="110" height="120" viewBox="0 0 110 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M36 20 L14 38 L24 54 L34 45 V102 H76 V45 L86 54 L96 38 L74 20 Q55 30 36 20 Z" fill="#FAF6F0" stroke="#2B2623" stroke-width="2.5" stroke-linejoin="round"/>
+                                <path d="M36 20 Q55 36 74 20" stroke="#B85D43" stroke-width="2.5" fill="none"/>
+                                <circle cx="55" cy="45" r="2.2" fill="#B85D43"/>
+                                <circle cx="55" cy="60" r="2.2" fill="#B85D43"/>
+                                <circle cx="55" cy="75" r="2.2" fill="#B85D43"/>
+                            </svg>
+                        </div>
+                        <div class="p-4 d-flex flex-column flex-grow-1">
+                            <h3 class="h4 fw-bold mb-2">3. Blusas, Camisas e Croppeds</h3>
+                            <p class="text-muted small mb-3">
+                                Aprenda a construir partes superiores com encaixe perfeito de cavas e mangas, golas estruturadas, pences de busto e costura francesa.
+                            </p>
+                            <ul class="list-unstyled small mb-4 flex-grow-1">
+                                <li class="mb-1"><i class="bi bi-check2-circle text-terracotta me-2"></i>Decotes com revel, viés e gola esporte</li>
+                                <li class="mb-1"><i class="bi bi-check2-circle text-terracotta me-2"></i>Embebimento de mangas e punhos</li>
+                                <li><i class="bi bi-check2-circle text-terracotta me-2"></i>Casas de botão e vista de camisaria</li>
+                            </ul>
+                            <button type="button" class="btn btn-outline-terracotta btn-sm w-100" onclick="abrirDetalhesProduto('blusas')">
+                                <i class="bi bi-journal-text me-1"></i> Ver Ementa / Detalhes
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Produto 4: Vestidos Casuais e Festa -->
+                <div class="col-md-6 col-lg-4 produto-item" data-category="fabricacao consertos">
+                    <div class="product-card">
+                        <div class="product-illustration">
+                            <span class="difficulty-pill"><i class="bi bi-bar-chart-fill text-gold me-1"></i>Intermediário</span>
+                            <span class="category-pill bg-white text-terracotta shadow-sm">Fabricação & Conserto</span>
+                            <!-- Ilustração SVG Vestido -->
+                            <svg width="110" height="120" viewBox="0 0 110 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M38 16 L32 46 L18 104 H92 L78 46 L72 16 Q55 25 38 16 Z" fill="#D4A373" stroke="#2B2623" stroke-width="2.5" stroke-linejoin="round"/>
+                                <line x1="32" y1="46" x2="78" y2="46" stroke="#2B2623" stroke-width="2.5"/>
+                                <path d="M48 46 L55 56 L62 46" stroke="#FAF6F0" stroke-width="2" fill="none"/>
+                            </svg>
+                        </div>
+                        <div class="p-4 d-flex flex-column flex-grow-1">
+                            <h3 class="h4 fw-bold mb-2">4. Vestidos Casuais e Festa</h3>
+                            <p class="text-muted small mb-3">
+                                Uniões de corpo e saia, ajuste de alças e busto, manuseio de tecidos delicados (viscose, crepe e cetim) e bainhas de vestidos longos.
+                            </p>
+                            <ul class="list-unstyled small mb-4 flex-grow-1">
+                                <li class="mb-1"><i class="bi bi-check2-circle text-terracotta me-2"></i>Confecção de vestido chemise e evasê</li>
+                                <li class="mb-1"><i class="bi bi-check2-circle text-terracotta me-2"></i>Ajuste de ombros, busto e cintura</li>
+                                <li><i class="bi bi-check2-circle text-terracotta me-2"></i>Acabamento fino em tecidos fluidos</li>
+                            </ul>
+                            <button type="button" class="btn btn-outline-terracotta btn-sm w-100" onclick="abrirDetalhesProduto('vestidos')">
+                                <i class="bi bi-journal-text me-1"></i> Ver Ementa / Detalhes
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Produto 5: Zíperes, Botões e Elásticos -->
+                <div class="col-md-6 col-lg-4 produto-item" data-category="consertos">
+                    <div class="product-card">
+                        <div class="product-illustration">
+                            <span class="difficulty-pill"><i class="bi bi-bar-chart-fill text-gold me-1"></i>Iniciante</span>
+                            <span class="category-pill bg-white text-charcoal shadow-sm">Consertos & Ajustes</span>
+                            <!-- Ilustração SVG Zíper e Botão -->
+                            <svg width="110" height="120" viewBox="0 0 110 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="28" y="14" width="24" height="92" rx="4" fill="#FAF6F0" stroke="#2B2623" stroke-width="2.5"/>
+                                <line x1="40" y1="18" x2="40" y2="102" stroke="#B85D43" stroke-width="3" stroke-dasharray="3 3"/>
+                                <rect x="35" y="34" width="10" height="14" rx="2" fill="#D4A373" stroke="#2B2623" stroke-width="2"/>
+                                <circle cx="76" cy="42" r="14" fill="#4A6B5D" stroke="#2B2623" stroke-width="2.5"/>
+                                <circle cx="72" cy="39" r="2" fill="#FAF6F0"/>
+                                <circle cx="80" cy="39" r="2" fill="#FAF6F0"/>
+                                <circle cx="72" cy="46" r="2" fill="#FAF6F0"/>
+                                <circle cx="80" cy="46" r="2" fill="#FAF6F0"/>
+                                <path d="M62 76 Q76 68 90 76 Q76 84 62 76 Z" fill="#D4A373" stroke="#2B2623" stroke-width="2"/>
+                            </svg>
+                        </div>
+                        <div class="p-4 d-flex flex-column flex-grow-1">
+                            <h3 class="h4 fw-bold mb-2">5. Zíperes, Botões e Elásticos</h3>
+                            <p class="text-muted small mb-3">
+                                Os reparos rápidos de maior giro diário em ateliês: troca sem marcas de zíper comum, invisível e de jaqueta, além de elásticos embutidos.
+                            </p>
+                            <ul class="list-unstyled small mb-4 flex-grow-1">
+                                <li class="mb-1"><i class="bi bi-check2-circle text-terracotta me-2"></i>Troca de zíper invisível, comum e jeans</li>
+                                <li class="mb-1"><i class="bi bi-check2-circle text-terracotta me-2"></i>Substituição de elástico em cós e punhos</li>
+                                <li><i class="bi bi-check2-circle text-terracotta me-2"></i>Cerzido invisível e reforço de costuras</li>
+                            </ul>
+                            <button type="button" class="btn btn-outline-terracotta btn-sm w-100" onclick="abrirDetalhesProduto('reparos')">
+                                <i class="bi bi-journal-text me-1"></i> Ver Ementa / Detalhes
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Produto 6: Jaquetas, Blazers e Peças Estruturadas -->
+                <div class="col-md-6 col-lg-4 produto-item" data-category="fabricacao consertos">
+                    <div class="product-card">
+                        <div class="product-illustration">
+                            <span class="difficulty-pill"><i class="bi bi-bar-chart-fill text-gold me-1"></i>Avançado</span>
+                            <span class="category-pill bg-white text-terracotta shadow-sm">Fabricação & Conserto</span>
+                            <!-- Ilustração SVG Blazer/Jaqueta -->
+                            <svg width="110" height="120" viewBox="0 0 110 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M32 18 L14 34 L20 92 H32 V48 V104 H78 V48 V92 H90 L96 34 L78 18 L55 34 L32 18 Z" fill="#2B2623" stroke="#2B2623" stroke-width="2" stroke-linejoin="round"/>
+                                <path d="M36 20 L55 56 L42 56 Z" fill="#B85D43"/>
+                                <path d="M74 20 L55 56 L68 56 Z" fill="#B85D43"/>
+                                <circle cx="55" cy="68" r="2.5" fill="#D4A373"/>
+                                <circle cx="55" cy="82" r="2.5" fill="#D4A373"/>
+                            </svg>
+                        </div>
+                        <div class="p-4 d-flex flex-column flex-grow-1">
+                            <h3 class="h4 fw-bold mb-2">6. Jaquetas, Blazers e Peças Estruturadas</h3>
+                            <p class="text-muted small mb-3">
+                                Técnicas de alfaiataria para peças de alto valor agregado: encurtamento de mangas com forro, troca de forro interno e construção de lapelas.
+                            </p>
+                            <ul class="list-unstyled small mb-4 flex-grow-1">
+                                <li class="mb-1"><i class="bi bi-check2-circle text-terracotta me-2"></i>Ajuste de mangas e ombros em blazers</li>
+                                <li class="mb-1"><i class="bi bi-check2-circle text-terracotta me-2"></i>Substituição completa de forro interno</li>
+                                <li><i class="bi bi-check2-circle text-terracotta me-2"></i>Entretelagem, golas e bolsos embutidos</li>
+                            </ul>
+                            <button type="button" class="btn btn-outline-terracotta btn-sm w-100" onclick="abrirDetalhesProduto('jaquetas')">
+                                <i class="bi bi-journal-text me-1"></i> Ver Ementa / Detalhes
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. SERVIÇOS (4 MODALIDADES COMPLETAS) -->
+    <section id="servicos" class="py-5 bg-cream">
+        <div class="container py-4">
+            <div class="text-center mx-auto mb-5" style="max-width: 700px;">
+                <span class="text-uppercase fw-bold text-sage small">Modalidades de Ensino</span>
+                <h2 class="display-5 fw-bold mt-1 mb-3">Escolha o curso ideal para o seu momento</h2>
+                <p class="text-muted">
+                    Estruturamos trilhas flexíveis para atender desde quem nunca pegou em uma agulha até quem busca profissionalização rápida em Birigui.
+                </p>
+            </div>
+
+            <div class="row g-4">
+                <!-- Serviço 1 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-card d-flex flex-column">
+                        <div class="service-icon-box bg-terracotta-light text-terracotta">
+                            <i class="bi bi-stars"></i>
+                        </div>
+                        <h3 class="h4 fw-bold mb-2">Curso Completo de Corte e Costura</h3>
+                        <p class="text-muted small mb-3">
+                            Formação completa do iniciante ao avançado, passando por leitura de moldes, corte e montagem das principais peças do vestuário.
+                        </p>
+                        <ul class="list-unstyled small mb-3 flex-grow-1">
+                            <li class="mb-2"><i class="bi bi-check-lg text-sage me-2"></i><strong>Público:</strong> Iniciantes sem experiência</li>
+                            <li class="mb-2"><i class="bi bi-clock text-terracotta me-2"></i><strong>Carga horária:</strong> 48 horas (3 meses)</li>
+                            <li class="mb-2"><i class="bi bi-check-lg text-sage me-2"></i>Domínio de máquina reta e overloque</li>
+                            <li><i class="bi bi-check-lg text-sage me-2"></i>Apostila ilustrada + Certificado</li>
+                        </ul>
+                        <div class="pt-3 border-top">
+                            <div class="small text-muted">Mensalidade acessível</div>
+                            <div class="fs-4 fw-bold text-charcoal mb-3">R$ 189<span class="fs-6 fw-normal text-muted">/mês</span></div>
+                            <a href="#contato" onclick="selecionarCurso('Curso Completo de Corte e Costura')" class="btn btn-outline-terracotta btn-sm w-100">
+                                Inscrever-se Nesta Trilha
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Serviço 2 (Destaque) -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-card featured d-flex flex-column">
+                        <span class="badge bg-terracotta position-absolute top-0 end-0 m-3 rounded-pill px-3 py-2">Mais Procurado</span>
+                        <div class="service-icon-box bg-terracotta text-white">
+                            <i class="bi bi-scissors"></i>
+                        </div>
+                        <h3 class="h4 fw-bold mb-2">Oficina Intensiva de Consertos e Reformas</h3>
+                        <p class="text-muted small mb-3">
+                            Foco em retorno financeiro rápido. Aprenda os ajustes mais solicitados no dia a dia e como precificar seus serviços com lucro.
+                        </p>
+                        <ul class="list-unstyled small mb-3 flex-grow-1">
+                            <li class="mb-2"><i class="bi bi-check-lg text-sage me-2"></i><strong>Público:</strong> Quem busca renda extra rápida</li>
+                            <li class="mb-2"><i class="bi bi-clock text-terracotta me-2"></i><strong>Carga horária:</strong> 32 horas (2 meses)</li>
+                            <li class="mb-2"><i class="bi bi-check-lg text-sage me-2"></i>Bainhas, zíperes, cinturas e reformas</li>
+                            <li><i class="bi bi-check-lg text-sage me-2"></i>Tabela de preços + Gestão de ateliê</li>
+                        </ul>
+                        <div class="pt-3 border-top">
+                            <div class="small text-muted">Mensalidade acessível</div>
+                            <div class="fs-4 fw-bold text-terracotta mb-3">R$ 219<span class="fs-6 fw-normal text-muted">/mês</span></div>
+                            <a href="#contato" onclick="selecionarCurso('Oficina Intensiva de Consertos e Reformas')" class="btn btn-terracotta btn-sm w-100">
+                                Garantir Vaga Intensiva
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Serviço 3 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-card d-flex flex-column">
+                        <div class="service-icon-box bg-sage-light text-sage">
+                            <i class="bi bi-rulers"></i>
+                        </div>
+                        <h3 class="h4 fw-bold mb-2">Modelagem Plana e Interpretação de Moldes</h3>
+                        <p class="text-muted small mb-3">
+                            Conquiste autonomia para criar suas próprias bases sob medida de saias, blusas, calças e vestidos sem depender de moldes prontos.
+                        </p>
+                        <ul class="list-unstyled small mb-3 flex-grow-1">
+                            <li class="mb-2"><i class="bi bi-check-lg text-sage me-2"></i><strong>Público:</strong> Costureiras e estudantes</li>
+                            <li class="mb-2"><i class="bi bi-clock text-terracotta me-2"></i><strong>Carga horária:</strong> 24 horas (6 semanas)</li>
+                            <li class="mb-2"><i class="bi bi-check-lg text-sage me-2"></i>Diagramas base e folgas de vestibilidade</li>
+                            <li><i class="bi bi-check-lg text-sage me-2"></i>Kit de réguas de modelagem incluso</li>
+                        </ul>
+                        <div class="pt-3 border-top">
+                            <div class="small text-muted">Investimento único</div>
+                            <div class="fs-4 fw-bold text-charcoal mb-3">R$ 260<span class="fs-6 fw-normal text-muted">/módulo</span></div>
+                            <a href="#contato" onclick="selecionarCurso('Modelagem Plana e Interpretação de Moldes')" class="btn btn-outline-terracotta btn-sm w-100">
+                                Inscrever-se Nesta Trilha
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Serviço 4 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-card d-flex flex-column">
+                        <div class="service-icon-box bg-gold-light text-gold">
+                            <i class="bi bi-person-check-fill"></i>
+                        </div>
+                        <h3 class="h4 fw-bold mb-2">Mentoria VIP: Máquina Reta e Overloque</h3>
+                        <p class="text-muted small mb-3">
+                            Aulas particulares personalizadas para destravar o manuseio da sua máquina doméstica ou industrial, regulagem de pontos e projetos próprios.
+                        </p>
+                        <ul class="list-unstyled small mb-3 flex-grow-1">
+                            <li class="mb-2"><i class="bi bi-check-lg text-sage me-2"></i><strong>Público:</strong> Atendimento individualizado</li>
+                            <li class="mb-2"><i class="bi bi-clock text-terracotta me-2"></i><strong>Carga horária:</strong> 12 horas (4 encontros)</li>
+                            <li class="mb-2"><i class="bi bi-check-lg text-sage me-2"></i>Passagem de linha, tensão e manutenção</li>
+                            <li><i class="bi bi-check-lg text-sage me-2"></i>Horários flexíveis sob agendamento</li>
+                        </ul>
+                        <div class="pt-3 border-top">
+                            <div class="small text-muted">Pacote completo</div>
+                            <div class="fs-4 fw-bold text-charcoal mb-3">R$ 240<span class="fs-6 fw-normal text-muted">/pacote</span></div>
+                            <a href="#contato" onclick="selecionarCurso('Mentoria VIP: Máquina Reta e Overloque')" class="btn btn-outline-terracotta btn-sm w-100">
+                                Agendar Mentoria VIP
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. LOCALIZAÇÃO (ETEC DE BIRIGUI - DR. RENATO CORDEIRO) -->
+    <section id="localizacao" class="py-5 bg-cream-dark">
+        <div class="container py-4">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-5">
+                    <span class="text-uppercase fw-bold text-terracotta small">Polo Presencial em Birigui - SP</span>
+                    <h2 class="display-6 fw-bold mt-1 mb-3">Estude na Etec Dr. Renato Cordeiro</h2>
+                    <p class="text-muted mb-4">
+                        Nossas aulas acontecem em estrutura completa na tradicional <strong>Etec de Birigui - Dr. Renato Cordeiro</strong>, localizada no centro da cidade, com fácil acesso por transporte público e estacionamento próximo.
+                    </p>
+
+                    <div class="bg-white p-4 rounded-4 shadow-sm border mb-4">
+                        <div class="d-flex align-items-start gap-3 mb-3">
+                            <div class="bg-terracotta-light text-terracotta rounded-circle p-2 flex-shrink-0">
+                                <i class="bi bi-geo-alt-fill fs-5"></i>
+                            </div>
+                            <div>
+                                <h4 class="h6 fw-bold mb-1">Endereço Oficial</h4>
+                                <p class="text-muted small mb-0">
+                                    <strong>Etec Dr. Renato Cordeiro</strong><br>
+                                    Rua Roberto Clark, 420 - Centro<br>
+                                    Birigui - SP, CEP 16200-040
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="d-flex align-items-start gap-3 mb-3">
+                            <div class="bg-sage-light text-sage rounded-circle p-2 flex-shrink-0">
+                                <i class="bi bi-clock-fill fs-5"></i>
+                            </div>
+                            <div>
+                                <h4 class="h6 fw-bold mb-1">Horários das Turmas (Manhã, Tarde e Noite)</h4>
+                                <p class="text-muted small mb-0">
+                                    <strong>Manhã:</strong> 08h30 às 11h30 | <strong>Tarde:</strong> 14h00 às 17h00<br>
+                                    <strong>Noite:</strong> 19h00 às 21h30 | <strong>Sábados:</strong> 08h30 às 12h30
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="d-flex align-items-start gap-3">
+                            <div class="bg-gold-light text-gold rounded-circle p-2 flex-shrink-0">
+                                <i class="bi bi-signpost-split-fill fs-5"></i>
+                            </div>
+                            <div>
+                                <h4 class="h6 fw-bold mb-1">Pontos de Referência</h4>
+                                <p class="text-muted small mb-0">
+                                    A 3 quadras da Praça Dr. Gama e próximo ao Terminal Rodoviário Urbano de Birigui.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="https://www.google.com/maps/dir/?api=1&destination=Etec+Dr.+Renato+Cordeiro+Rua+Roberto+Clark+420+Birigui+SP" target="_blank" rel="noopener noreferrer" class="btn btn-terracotta w-100 py-3">
+                        <i class="bi bi-map-fill me-2"></i> Traçar Rota no Google Maps
+                    </a>
+                </div>
+
+                <!-- Mapa Incorporado Responsivo (Google Maps Iframe) -->
+                <div class="col-lg-7">
+                    <div class="map-container">
+                        <iframe 
+                            title="Mapa da Etec de Birigui - Dr. Renato Cordeiro"
+                            src="https://maps.google.com/maps?q=Etec%20Dr.%20Renato%20Cordeiro,%20Rua%20Roberto%20Clark,%20420,%20Birigui%20-%20SP&t=&z=16&ie=UTF8&iwloc=&output=embed" 
+                            width="100%" 
+                            height="450" 
+                            style="border:0; display:block;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. VITRINE DOS 5 ESPECIALISTAS + FORMULÁRIO DE PRÉ-MATRÍCULA -->
+    <section id="contato" class="py-5 bg-cream">
+        <div class="container py-4">
+            <!-- Vitrine dos 5 Especialistas -->
+            <div class="text-center mx-auto mb-4" style="max-width: 720px;">
+                <span class="text-uppercase fw-bold text-sage small">Metodologia Multidisciplinar</span>
+                <h2 class="h2 fw-bold mt-1 mb-2">Desenvolvido por 5 Especialistas</h2>
+                <p class="text-muted small">
+                    Cada detalhe da experiência <strong>Costure Bem</strong> foi planejado por profissionais dedicados a unir técnica de alfaiataria, didática acolhedora e empreendedorismo local.
+                </p>
+            </div>
+
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-5 g-3 mb-5">
+                <div class="col">
+                    <div class="specialist-card">
+                        <div class="specialist-avatar bg-terracotta-light text-terracotta">
+                            <i class="bi bi-scissors"></i>
+                        </div>
+                        <h3 class="h6 fw-bold mb-1">Profa. Helena Martins</h3>
+                        <div class="badge bg-terracotta-light text-terracotta mb-2">Consultora de Moda e Costura</div>
+                        <p class="text-muted mb-0" style="font-size: 0.8rem;">Modelista com 18 anos de experiência em alfaiataria e reformas.</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="specialist-card">
+                        <div class="specialist-avatar bg-sage-light text-sage">
+                            <i class="bi bi-palette"></i>
+                        </div>
+                        <h3 class="h6 fw-bold mb-1">Camila Ferraz</h3>
+                        <div class="badge bg-sage-light text-sage mb-2">UX/UI Designer</div>
+                        <p class="text-muted mb-0" style="font-size: 0.8rem;">Arquitetura visual acolhedora, acessível e focada na jornada do aluno.</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="specialist-card">
+                        <div class="specialist-avatar bg-gold-light text-gold">
+                            <i class="bi bi-pen"></i>
+                        </div>
+                        <h3 class="h6 fw-bold mb-1">Rafael Nogueira</h3>
+                        <div class="badge bg-gold-light text-charcoal mb-2">Copywriter Educacional</div>
+                        <p class="text-muted mb-0" style="font-size: 0.8rem;">Comunicação clara que traduz termos técnicos para iniciantes.</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="specialist-card">
+                        <div class="specialist-avatar bg-terracotta-light text-terracotta">
+                            <i class="bi bi-code-slash"></i>
+                        </div>
+                        <h3 class="h6 fw-bold mb-1">Lucas Andrade</h3>
+                        <div class="badge bg-terracotta-light text-terracotta mb-2">Dev Front-End</div>
+                        <p class="text-muted mb-0" style="font-size: 0.8rem;">Performance, responsividade mobile e interatividade em HTML5/JS.</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="specialist-card">
+                        <div class="specialist-avatar bg-sage-light text-sage">
+                            <i class="bi bi-geo-alt"></i>
+                        </div>
+                        <h3 class="h6 fw-bold mb-1">Beatriz Tavares</h3>
+                        <div class="badge bg-sage-light text-sage mb-2">Especialista em SEO Local</div>
+                        <p class="text-muted mb-0" style="font-size: 0.8rem;">Conexão direta entre alunos de Birigui e o polo Etec Dr. Renato Cordeiro.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Formulário Interativo de Pré-Matrícula -->
+            <div class="row justify-content-center">
+                <div class="col-lg-9">
+                    <div class="form-card">
+                        <div class="text-center mb-4">
+                            <span class="badge bg-terracotta-light text-terracotta rounded-pill px-3 py-2 mb-2 fw-semibold">
+                                Inscrições Abertas — Turmas 2026
+                            </span>
+                            <h2 class="display-6 fw-bold">Garanta sua Pré-Matrícula</h2>
+                            <p class="text-muted">
+                                Preencha o formulário abaixo para receber o cronograma completo e agendar uma visita gratuita ao nosso ateliê na Etec de Birigui.
+                            </p>
+                        </div>
+
+                        <!-- Alerta de Feedback Interativo -->
+                        <div id="formFeedback" class="alert d-none rounded-4 mb-4" role="alert"></div>
+
+                        <form id="matriculaForm" novalidate>
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <label for="nomeAluno" class="form-label fw-semibold small">Nome Completo *</label>
+                                    <input type="text" class="form-control" id="nomeAluno" placeholder="Ex: Maria Aparecida Silva" required>
+                                    <div class="invalid-feedback">Por favor, informe seu nome completo.</div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <label for="whatsappAluno" class="form-label fw-semibold small">WhatsApp (com DDD) *</label>
+                                    <input type="tel" class="form-control" id="whatsappAluno" placeholder="(18) 99999-9999" required>
+                                    <div class="invalid-feedback">Informe um número de WhatsApp válido com DDD.</div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <label for="cursoInteresse" class="form-label fw-semibold small">Serviço / Modalidade de Interesse *</label>
+                                    <select class="form-select" id="cursoInteresse" required>
+                                        <option value="" selected disabled>Selecione uma modalidade...</option>
+                                        <option value="Curso Completo de Corte e Costura">Curso Completo de Corte e Costura</option>
+                                        <option value="Oficina Intensiva de Consertos e Reformas">Oficina Intensiva de Consertos e Reformas</option>
+                                        <option value="Modelagem Plana e Interpretação de Moldes">Modelagem Plana e Interpretação de Moldes</option>
+                                        <option value="Mentoria VIP: Máquina Reta e Overloque">Mentoria VIP: Máquina Reta e Overloque</option>
+                                    </select>
+                                    <div class="invalid-feedback">Selecione a modalidade desejada.</div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <label for="turnoPreferencia" class="form-label fw-semibold small">Turno de Preferência *</label>
+                                    <select class="form-select" id="turnoPreferencia" required>
+                                        <option value="" selected disabled>Escolha o melhor horário...</option>
+                                        <option value="Manhã (08h30 às 11h30)">Manhã (08h30 às 11h30)</option>
+                                        <option value="Tarde (14h00 às 17h00)">Tarde (14h00 às 17h00)</option>
+                                        <option value="Noite (19h00 às 21h30)">Noite (19h00 às 21h30)</option>
+                                        <option value="Sábado (08h30 às 12h30)">Sábado (08h30 às 12h30)</option>
+                                    </select>
+                                    <div class="invalid-feedback">Escolha um turno de preferência.</div>
+                                </div>
+
+                                <div class="col-12">
+                                    <label for="objetivoAluno" class="form-label fw-semibold small">Qual peça ou técnica você mais quer aprender? (Opcional)</label>
+                                    <textarea class="form-control" id="objetivoAluno" rows="2" placeholder="Ex: Quero aprender a fazer bainha original, ajustar calças e costurar vestidos..."></textarea>
+                                </div>
+
+                                <div class="col-12 mt-4">
+                                    <button type="submit" class="btn btn-terracotta w-100 py-3 fs-5">
+                                        <i class="bi bi-check-circle-fill me-2"></i> Enviar Pré-Matrícula Agora
+                                    </button>
+                                    <p class="text-center text-muted small mt-2 mb-0">
+                                        <i class="bi bi-shield-lock me-1"></i> Seus dados estão seguros. Atendimento humanizado via WhatsApp.
+                                    </p>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. FOOTER COMPLETO -->
+    <footer class="footer-custom">
+        <div class="container">
+            <div class="row g-4 pb-4 border-bottom border-secondary border-opacity-25">
+                <!-- Coluna Marca -->
+                <div class="col-lg-4">
+                    <div class="d-flex align-items-center gap-2 mb-3">
+                        <svg width="32" height="32" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="8" y="6" width="24" height="4" rx="2" fill="#D4A373"/>
+                            <rect x="8" y="30" width="24" height="4" rx="2" fill="#D4A373"/>
+                            <rect x="11" y="10" width="18" height="20" fill="#B85D43"/>
+                            <path d="M33 5L14 35" stroke="#FAF6F0" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                        <span class="font-serif fs-3 fw-bold text-white">Costure <span class="text-terracotta">Bem</span></span>
+                    </div>
+                    <p class="small mb-4" style="color: #BFB8AE;">
+                        Escola de corte, costura, modelagem e consertos em Birigui-SP. Do primeiro ponto na máquina à confecção profissional com carinho, técnica e propósito.
+                    </p>
+                    <div class="d-flex gap-3">
+                        <a href="#contato" class="btn btn-outline-light btn-sm rounded-circle" aria-label="Instagram Costure Bem"><i class="bi bi-instagram"></i></a>
+                        <a href="#contato" class="btn btn-outline-light btn-sm rounded-circle" aria-label="Facebook Costure Bem"><i class="bi bi-facebook"></i></a>
+                        <a href="#contato" class="btn btn-outline-light btn-sm rounded-circle" aria-label="WhatsApp Costure Bem"><i class="bi bi-whatsapp"></i></a>
+                        <a href="#contato" class="btn btn-outline-light btn-sm rounded-circle" aria-label="YouTube Costure Bem"><i class="bi bi-youtube"></i></a>
+                    </div>
+                </div>
+
+                <!-- Coluna Links Rápidos -->
+                <div class="col-6 col-md-4 col-lg-2">
+                    <h5 class="h6 fw-bold text-white text-uppercase mb-3">Navegação</h5>
+                    <ul class="list-unstyled small">
+                        <li><a href="#home" class="footer-link">Home</a></li>
+                        <li><a href="#produtos" class="footer-link">Produtos (6 Módulos)</a></li>
+                        <li><a href="#servicos" class="footer-link">Serviços e Cursos</a></li>
+                        <li><a href="#localizacao" class="footer-link">Localização</a></li>
+                        <li><a href="#contato" class="footer-link">Pré-Matrícula</a></li>
+                    </ul>
+                </div>
+
+                <!-- Coluna Horário de Atendimento -->
+                <div class="col-6 col-md-4 col-lg-3">
+                    <h5 class="h6 fw-bold text-white text-uppercase mb-3">Atendimento & Aulas</h5>
+                    <ul class="list-unstyled small" style="color: #BFB8AE;">
+                        <li class="mb-2"><i class="bi bi-clock text-gold me-2"></i>Segunda a Sexta: 08h30 às 21h30</li>
+                        <li class="mb-2"><i class="bi bi-clock text-gold me-2"></i>Sábados: 08h30 às 12h30</li>
+                        <li class="mb-2"><i class="bi bi-whatsapp text-success me-2"></i>(18) 99742-8810</li>
+                        <li><i class="bi bi-envelope text-terracotta me-2"></i>contato@costurebem.com.br</li>
+                    </ul>
+                </div>
+
+                <!-- Coluna Endereço Etec Birigui -->
+                <div class="col-md-4 col-lg-3">
+                    <h5 class="h6 fw-bold text-white text-uppercase mb-3">Polo Presencial</h5>
+                    <p class="small mb-2" style="color: #BFB8AE;">
+                        <i class="bi bi-building text-gold me-2"></i><strong>Etec de Birigui - Dr. Renato Cordeiro</strong>
+                    </p>
+                    <p class="small mb-0" style="color: #BFB8AE;">
+                        <i class="bi bi-geo-alt text-terracotta me-2"></i>Rua Roberto Clark, 420 - Centro<br>
+                        <span class="ms-4">Birigui - SP, CEP 16200-040</span>
+                    </p>
+                </div>
+            </div>
+
+            <div class="pt-4 d-flex flex-column flex-md-row justify-content-between align-items-center small" style="color: #9E968C;">
+                <p class="mb-2 mb-md-0">&copy; 2026 <strong>Costure Bem</strong> — Todos os direitos reservados.</p>
+                <p class="mb-0">Birigui - SP • Assinado por 5 Especialistas em Moda, Design e Educação.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- MODAL DE EMENTA / DETALHES DOS 6 PRODUTOS -->
+    <div class="modal fade" id="produtoModal" tabindex="-1" aria-labelledby="produtoModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content rounded-4 border-0 shadow">
+                <div class="modal-header border-0 bg-terracotta-light rounded-top-4 px-4 py-3">
+                    <h5 class="modal-title fw-bold text-charcoal" id="produtoModalLabel">Ementa do Módulo</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                </div>
+                <div class="modal-body p-4" id="produtoModalBody">
+                    <!-- Conteúdo dinâmico via JavaScript -->
+                </div>
+                <div class="modal-footer border-0 px-4 pb-4 pt-0">
+                    <button type="button" class="btn btn-light rounded-pill px-4" data-bs-dismiss="modal">Fechar</button>
+                    <a href="#contato" class="btn btn-terracotta" data-bs-dismiss="modal">Quero Aprender Esta Peça</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- BOTÃO FLUTUANTE WHATSAPP -->
+    <a href="https://wa.me/5518997428810?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20o%20curso%20de%20costura%20Costure%20Bem%20na%20Etec%20de%20Birigui." 
+       target="_blank" 
+       rel="noopener noreferrer" 
+       class="whatsapp-float" 
+       aria-label="Falar com o Costure Bem no WhatsApp"
+       title="Tire suas dúvidas no WhatsApp">
+        <i class="bi bi-whatsapp"></i>
+    </a>
+
+    <!-- Bootstrap 5.3 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Lógica Interativa em JavaScript -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // 1. Efeito de sombra na Navbar ao rolar a página
+            const navbar = document.getElementById('mainNav');
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 40) {
+                    navbar.classList.add('scrolled');
+                } else {
+                    navbar.classList.remove('scrolled');
+                }
+            });
+
+            // Fechar menu mobile automaticamente ao clicar em um link
+            const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+            const navbarCollapse = document.getElementById('navbarContent');
+            navLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    if (navbarCollapse.classList.contains('show')) {
+                        const bsCollapse = bootstrap.Collapse.getInstance(navbarCollapse);
+                        if (bsCollapse) bsCollapse.hide();
+                    }
+                });
+            });
+
+            // 2. Filtro Interativo dos 6 Produtos (Todos, Fabricação, Consertos)
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            const productItems = document.querySelectorAll('.produto-item');
+
+            filterButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    filterButtons.forEach(btn => btn.classList.remove('active'));
+                    button.classList.add('active');
+
+                    const filterValue = button.getAttribute('data-filter');
+
+                    productItems.forEach(item => {
+                        const categories = item.getAttribute('data-category');
+                        if (filterValue === 'todos' || categories.includes(filterValue)) {
+                            item.style.display = 'block';
+                            item.animate([
+                                { opacity: 0, transform: 'translateY(12px)' },
+                                { opacity: 1, transform: 'translateY(0)' }
+                            ], { duration: 300, easing: 'ease-out' });
+                        } else {
+                            item.style.display = 'none';
+                        }
+                    });
+                });
+            });
+
+            // 3. Máscara de Telefone/WhatsApp no Formulário
+            const whatsappInput = document.getElementById('whatsappAluno');
+            whatsappInput.addEventListener('input', function (e) {
+                let x = e.target.value.replace(/\D/g, '').match(/(\d{0,2})(\d{0,5})(\d{0,4})/);
+                e.target.value = !x[2] ? x[1] : '(' + x[1] + ') ' + x[2] + (x[3] ? '-' + x[3] : '');
+            });
+
+            // 4. Validação e Feedback Visual do Formulário de Pré-Matrícula
+            const form = document.getElementById('matriculaForm');
+            const feedbackBox = document.getElementById('formFeedback');
+
+            form.addEventListener('submit', function (event) {
+                event.preventDefault();
+                event.stopPropagation();
+
+                const phoneClean = whatsappInput.value.replace(/\D/g, '');
+                if (phoneClean.length < 10) {
+                    whatsappInput.setCustomValidity('Número inválido');
+                } else {
+                    whatsappInput.setCustomValidity('');
+                }
+
+                if (!form.checkValidity()) {
+                    form.classList.add('was-validated');
+                    return;
+                }
+
+                const nome = document.getElementById('nomeAluno').value.trim();
+                const curso = document.getElementById('cursoInteresse').value;
+                const turno = document.getElementById('turnoPreferencia').value;
+
+                feedbackBox.className = 'alert alert-success rounded-4 mb-4 d-flex align-items-start gap-3';
+                feedbackBox.innerHTML = `
+                    <i class="bi bi-check-circle-fill fs-3 text-success"></i>
+                    <div>
+                        <h5 class="alert-heading fw-bold mb-1">Pré-matrícula confirmada, ${nome}!</h5>
+                        <p class="mb-0 small">
+                            Recebemos seu interesse na modalidade <strong>${curso}</strong> (Turno: <strong>${turno}</strong>) na <strong>Etec Dr. Renato Cordeiro - Birigui</strong>. Nossa equipe entrará em contato pelo seu WhatsApp em instantes!
+                        </p>
+                    </div>
+                `;
+
+                form.reset();
+                form.classList.remove('was-validated');
+                feedbackBox.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            });
+        });
+
+        // 5. Ementas Detalhadas dos 6 Produtos para o Modal Dinâmico
+        const ementasProdutos = {
+            calcas: {
+                titulo: '1. Calças Sociais e Jeans — Fabricação & Barra',
+                nivel: 'Iniciante / Intermediário',
+                carga: '16 horas práticas',
+                descricao: 'Domine a peça mais procurada em qualquer ateliê de costura, unindo construção sob medida e os reparos que geram renda imediata.',
+                topicos: [
+                    'Tirada de medidas (cintura, quadril, gancho frente/costas e entrepernas)',
+                    'Corte e montagem de calça social reta e pantalona com bolsos faca',
+                    'Bainha original preservando a barra desgastada do jeans',
+                    'Bainha italiana e bainha invisível à mão ou na máquina',
+                    'Ajuste de cintura, redução de quadril e correção de gancho'
+                ]
+            },
+            saias: {
+                titulo: '2. Saias Godê, Lápis e Midi — Modelagem e Costura',
+                nivel: 'Iniciante',
+                carga: '12 horas práticas',
+                descricao: 'A base ideal para compreender o sentido do fio do tecido, caimento fluido e acabamentos limpos de alfaiataria.',
+                topicos: [
+                    'Cálculo matemático e corte de saia godê total, meio godê e evasê',
+                    'Modelagem e costura de saia lápis com fenda traseira estruturada',
+                    'Aplicação de entretela e montagem de cós anatômico e reto',
+                    'Instalação impecável de zíper invisível e forro embutido',
+                    'Acabamento de barra lenço em tecidos leves'
+                ]
+            },
+            blusas: {
+                titulo: '3. Blusas, Camisas e Croppeds — Corte e Acabamento',
+                nivel: 'Intermediário',
+                carga: '16 horas práticas',
+                descricao: 'Aprenda a construir peças superiores que vestem com conforto e elegância, dominando mangas, golas e pences.',
+                topicos: [
+                    'Transferência e costura de pences de busto e acinturamento',
+                    'Acabamento de decotes com revel, viés e gola esporte de camisaria',
+                    'Embebimento e encaixe perfeito de mangas sem pregas indesejadas',
+                    'Montagem de carcela, punhos abotoados e casas de botão',
+                    'Costura francesa para acabamento interno sofisticado'
+                ]
+            },
+            vestidos: {
+                titulo: '4. Vestidos Casuais e Festa — Ajuste e Confecção',
+                nivel: 'Intermediário',
+                carga: '16 horas práticas',
+                descricao: 'União precisa entre corpo e saia, manuseio de tecidos delicados e técnicas de ajuste para vestidos do dia a dia ou eventos.',
+                topicos: [
+                    'Confecção de vestido chemise, envelope e evasê com recortes',
+                    'Manuseio de viscose, crepe, linho e cetim sem repuxar a costura',
+                    'Ajuste de alças, cavas, busto e cintura em vestidos prontos',
+                    'Nivelamento e bainha de vestidos longos e godês',
+                    'Aplicação de lastex e elásticos decorativos'
+                ]
+            },
+            reparos: {
+                titulo: '5. Zíperes, Botões e Elásticos — Reparos Rápidos',
+                nivel: 'Iniciante',
+                carga: '8 horas práticas',
+                descricao: 'Técnicas ágeis e limpas para os consertos de maior demanda diária, permitindo faturar desde as primeiras semanas de aula.',
+                topicos: [
+                    'Troca de zíper invisível em saias e vestidos usando calcador próprio',
+                    'Substituição de zíper comum e braguilha em calças jeans e sarja',
+                    'Troca de zíper destacável em jaquetas e moletons',
+                    'Substituição de elásticos embutidos e rebatidos em cós e punhos',
+                    'Prega de botões, colchetes e cerzido invisível em pequenos rasgos'
+                ]
+            },
+            jaquetas: {
+                titulo: '6. Jaquetas, Blazers e Peças Estruturadas — Reforma e Forro',
+                nivel: 'Avançado',
+                carga: '16 horas práticas',
+                descricao: 'Eleve seu nível técnico aprendendo a estruturar, forrar e ajustar peças complexas de alfaiataria e inverno.',
+                topicos: [
+                    'Encurtamento de mangas de blazer mantendo a abertura e botões',
+                    'Substituição completa de forro interno com folga de movimento',
+                    'Uso correto de entretelas termocolantes e ombreiras',
+                    'Ajuste de laterais e ombros em jaquetas e casacos estruturados',
+                    'Construção de lapelas e bolsos embutidos com vista'
+                ]
+            }
+        };
+
+        // Abre o Modal Bootstrap com os detalhes da peça clicada
+        function abrirDetalhesProduto(chave) {
+            const dados = ementasProdutos[chave];
+            if (!dados) return;
+
+            document.getElementById('produtoModalLabel').textContent = dados.titulo;
+            const modalBody = document.getElementById('produtoModalBody');
+
+            const listaHtml = dados.topicos.map(t => `
+                <li class="mb-2 d-flex align-items-start gap-2">
+                    <i class="bi bi-check-circle-fill text-terracotta mt-1"></i>
+                    <span>${t}</span>
+                </li>
+            `).join('');
+
+            modalBody.innerHTML = `
+                <div class="d-flex flex-wrap gap-2 mb-3">
+                    <span class="badge bg-sage-light text-sage rounded-pill px-3 py-2">${dados.nivel}</span>
+                    <span class="badge bg-cream-dark text-charcoal rounded-pill px-3 py-2"><i class="bi bi-clock me-1"></i>${dados.carga}</span>
+                </div>
+                <p class="text-muted small mb-3">${dados.descricao}</p>
+                <h6 class="fw-bold mb-2">Tópicos praticados em sala de aula:</h6>
+                <ul class="list-unstyled small mb-0">
+                    ${listaHtml}
+                </ul>
+            `;
+
+            const modal = new bootstrap.Modal(document.getElementById('produtoModal'));
+            modal.show();
+        }
+
+        // Pré-seleciona o serviço no formulário de pré-matrícula
+        function selecionarCurso(nomeCurso) {
+            const select = document.getElementById('cursoInteresse');
+            for (let i = 0; i < select.options.length; i++) {
+                if (select.options[i].value === nomeCurso) {
+                    select.selectedIndex = i;
+                    break;
+                }
+            }
+        }
+    </script>
+</body>
+</html>
